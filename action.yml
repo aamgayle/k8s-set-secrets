@@ -1,7 +1,7 @@
 name: 'Set imagePullSecrets field in input manifest files'
 description: 'Takes a docker-registry secret that has already been set up and in cluster and adds these secrets to the imagePullSecrets field'
 inputs:
-   # Please ensure you have used either azure/k8s-actions/aks-set-context or azure/k8s-actions/k8s-set-context in the workflow before this action
+   # Please ensure you have used azure/k8s-actions/k8s-set-context in the workflow before this action
    # You also need to have kubectl installed (azure/setup-kubectl)
    namespace:
       description: 'Choose the target Kubernetes namespace. If the namespace is not provided, the commands will run in the default namespace.'
